@@ -1,4 +1,4 @@
-# Nerual Network Charity Analysis
+# Neural Network Charity Analysis
 
 ## Overview of the Analysis: 
 This analysis aimed to assess effectiveness and positive impact of foundation dollars distributed to different charities and to create a sophisticated analysis model which could accurately identify charities worthy of continued financial support. The data set had a limited number of features for just over 34,000 organizations. Instead of using statistical and machine learning models, this analysis was attempted using a deep-learning neural network. 
