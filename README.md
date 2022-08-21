@@ -1,17 +1,17 @@
 # Nerual Network Charity Analysis
 
 ## Overview of the Analysis: 
-This analysis aimed to assess effectiveness and positive impact of foundation dollars distributed to different charities and to create a sophisticated analysis model which could accurately identify charities worthy of continued financial support. The data set had a limited number of features for just over 34,000 organizations. Instead of using statistical and machine learnning models, this analysis was attempted using a deep-learning neural network. 
+This analysis aimed to assess effectiveness and positive impact of foundation dollars distributed to different charities and to create a sophisticated analysis model which could accurately identify charities worthy of continued financial support. The data set had a limited number of features for just over 34,000 organizations. Instead of using statistical and machine learning models, this analysis was attempted using a deep-learning neural network. 
 
 ## Results: 
 ### Data Preprocessing
-The dataset was preprocessed by identifying the value of variables, dropping uneccessary columns, binning when possible, and encoding bins to binary values. 
+The dataset was preprocessed by identifying the value of variables, dropping unecessary columns, binning when possible, and encoding bins to binary values. 
   - Target variable: `IS_SUCCESSFUL`
   - Feature variables: `APPLICATION_TYPE`, `AFFILIATION`, `CLASSIFICATION`, `USE_CASE`, `ORGANIZATION`, `STATUS`, `INCOME_AMT`, `SPECIAL_CONSIDERATIONS`, `ASK_AMT`
   - Removed variables: `EIN`, `NAME`
   
 ### Compiling, Training, and Evaluating the Model
-Using `IS_SUCCESSFUL` as the feature value, the dataset was split into training and testing data and fitted with a standard scaler. The original model after many attemptsat adjusting the number of neurons on each node layer, not wanting to overfit, was defined as follows:
+Using `IS_SUCCESSFUL` as the feature value, the dataset was split into training and testing data and fitted with a standard scaler. The original model, after many attempts at adjusting the number of neurons on each node layer, not wanting to overfit, was defined as follows:
  
     number_input_features = len(X_train_scaled[0])
     hidden_nodes_layer1 = 9
@@ -59,6 +59,8 @@ Optimization attempt #3: Dropped `SPECIAL_CONSIDERATIONS` columns, 3 hidden laye
 
     268/268 - 0s - loss: 0.5523 - accuracy: 0.7308 - 260ms/epoch - 970us/step
     Loss: 0.5523256063461304, Accuracy: 0.7308454513549805
+
+As shown above, accuracy percentages inch closer with each adjustment, but in extremely small variances.
 
 ## Summary: 
 A goal of at least 75% accuracy could not be met using this analysis model despite avarious attempts applying a wide variety of adjustments to the model. It is unclear how the feature variables are tied to the target variable using this model for analysis, but other methods - even linear regression methods that pit the dependent variable on the additional feature variables independently might have more insights plotted togehter in layers, or on their own.  
