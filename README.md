@@ -60,7 +60,7 @@ Optimization attempt #3: Dropped `SPECIAL_CONSIDERATIONS` columns, 3 hidden laye
     268/268 - 0s - loss: 0.5523 - accuracy: 0.7308 - 260ms/epoch - 970us/step
     Loss: 0.5523256063461304, Accuracy: 0.7308454513549805
 
-As shown above, accuracy percentages inch closer with each adjustment, but in extremely small variances.
+As shown above, accuracy percentages do inch closer with each adjustment, but only in extremely small increments.
 
 ## Summary: 
 A goal of at least 75% accuracy could not be met using this analysis model despite avarious attempts applying a wide variety of adjustments to the model. It is unclear how the feature variables are tied to the target variable using this model for analysis, but other methods - even linear regression methods that pit the dependent variable on the additional feature variables independently might have more insights plotted togehter in layers, or on their own.  
